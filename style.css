@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+.mulish-normal {
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:400;
+    font-style: normal;
+  }
+  /* default styles */
+  *{
+    margin: 0 auto;
+  }
+/* navbar */
+  .navbar{
+    width: 1174px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px ;
+    margin-bottom: 100px;
+  }
+.logo{
+display: flex;
+align-items: center;
+width: 280px;
+margin-left: 0;
+}
+.logo h3{
+font-size: 2.5rem;
+font-weight: 800;
+line-height: 3.5rem;
+text-align: left;
+color: black;
+}
+.Orange{
+    color: rgb(255, 84, 0);
+}
+.nav-list{
+    display:flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.4rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: black;
+    margin-right: 0;
+} 
+/* First Banner Styles */
+.first-banner{
+    margin: 0 auto;
+    border: 2px solid white;
+    width: 1170px;
+    height: 500px;
+    background-image:url(./image/Group\ 13\ \(1\)\ \(1\).png);
+    background-color: rgba(19,24,0,0.3);
+    border-radius: 8px;
+    background-blend-mode: overlay;
+}
+.explore h3{
+    font-size: 3rem;
+    font-weight:800;
+    color: white;
+    line-height: 80px;
+    text-align: center;
+    margin-top: 106px;
+}
+.explore p{
+    text-align: center;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.travel-inputs{
+width: 800px;
+height: 84px;
+background-color: rgba(255, 255, 255, 0.3);
+margin-top: 64px;
+border-radius: 8px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+select , input , .btn{
+    width: 174px;
+    height: 52px;
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 0 0.5rem;
+    margin: 0 1rem;
+    border: none;
+    cursor: pointer;
+    color: rgba(19, 19, 24, 0.5);
+}
+.btn{
+ background-color:rgb(255, 84, 0) ;
+ color: white;
+}
+
+/* Responsive */
+@media screen and (max-width:576px){
+    .navbar, .first-banner, .travel-inputs{
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+        margin-left:10px ;
+    }
+.nav-list{
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: -10px;
+}
+}
